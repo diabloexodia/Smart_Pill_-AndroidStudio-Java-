@@ -2,4 +2,4 @@
 Everything related to Smart Pill Dispenser 
 
 
-+ MyApplication contains the android app to configure pill details.
+'+' MyApplication contains the android app to configure pill details.
