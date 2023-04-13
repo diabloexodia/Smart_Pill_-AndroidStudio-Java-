@@ -1,4 +1,4 @@
-# Smart_Pill_Dispenser_EnginneringClinics-WIN-2022-2023-
+# Smart_Pill_Dispenser - EngineeringClinics: WIN2022-2023
 Everything related to Smart Pill Dispenser.
 
 
