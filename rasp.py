@@ -1,5 +1,9 @@
+#Author - @Diabloexodia[13042023-11:13]
+
 import boto3
 
+
+#------------------------------------------ AWS Fetch-[DO NOT TAMPER]---------------------------------------------------
 # Create an S3 client with your AWS credentials
 s3 = boto3.client('s3',
                   aws_access_key_id='AKIAWZE4LHRMMINZAQYH',
@@ -18,5 +22,10 @@ s3.download_file(bucket_name, object_key, local_file_path)
 with open(local_file_path, 'r') as f:
     file_contents = f.read()
 
+#-----------------------------------------------------------------------------------------------------------------------
+
 # Display the contents of the text file on the Raspberry Pi output
 print(file_contents)
+
+
+# TODO - Code for dispensing functionality 
