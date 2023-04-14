@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name1"
+        android:layout_width="330dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter Name "
+        app:boxStrokeColor="#ff69b4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:startIconDrawable="@drawable/baseline_drive_file_rename_outline_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/time1"
+        android:layout_width="329dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter time "
+        app:boxStrokeColor="#ff69b4"
+        app:startIconDrawable="@drawable/twotone_access_time_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="datetime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pillid1"
+        android:layout_width="329dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter Pill ID "
+        app:boxStrokeColor="#ff69b4"
+        app:startIconDrawable="@drawable/twotone_verified_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pillId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/d1"
+        android:layout_width="329dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter Dosage "
+        app:boxStrokeColor="#ff69b4"
+        app:startIconDrawable="@drawable/twotone_diamond_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dosage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clear"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#ffdcef"
+        android:text="Clear"
+        android:textColor="#a537fd"
+        app:cornerRadius="9.8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#ffdcef"
+        android:text="Save"
+        android:textColor="#a537fd"
+        app:cornerRadius="9.8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="132dp"
+        android:text="Pill Configuration"
+        android:textColor="#ff69b4"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pill_svgrepo_com" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
