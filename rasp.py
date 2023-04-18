@@ -6,8 +6,8 @@ import boto3
 #------------------------------------------ AWS Fetch-[DO NOT TAMPER]---------------------------------------------------
 # Create an S3 client with your AWS credentials
 s3 = boto3.client('s3',
-                  aws_access_key_id='AKIAWZE4LHRMMINZAQYH',
-                  aws_secret_access_key='/J0o48inVABsBgAvHSS6jQ0rfslq72hpZYTd7sAi',
+                  aws_access_key_id='YOUR-ACCESS-KEY',
+                  aws_secret_access_key='YOUR-SECRET-KEY',
 region_name='ap-southeast-1')
 
 # Set the name of the S3 bucket and object key of the text file you want to display
