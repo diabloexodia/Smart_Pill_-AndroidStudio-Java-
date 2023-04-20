@@ -6,3 +6,4 @@ Everything related to Smart Pill Dispenser.
 + Lambda Function 
 + boto3 library ( for raspberryPI )
 + rasp.py ( raspberry pi code to fetch pill configuration details )
++ Project Report
