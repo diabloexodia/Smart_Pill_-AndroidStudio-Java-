@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_1"
+        android:title="Aspirin" />
+    <item
+        android:id="@+id/menu_item_2"
+        android:title="Metformin" />
+    <item
+        android:id="@+id/menu_item_3"
+        android:title="Lisinopril" />
+    <item
+        android:id="@+id/menu_item_4"
+        android:title="Mirena" />
+    <item
+        android:id="@+id/menu_item_5"
+        android:title="Omeprazole" />
+</menu>
