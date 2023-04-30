@@ -198,11 +198,11 @@ public class MainActivity extends AppCompatActivity {
 //                Log.d("brogh",naemEditText.getText().toString());
                 if (timingEditText == null || pillIdedittext == null || naemEditText == null) {
                     Toast.makeText(MainActivity.this, "Please input other details first !", Toast.LENGTH_SHORT).show();
-                } else if (!human.pillObject.time.contains(timingEditText.getText().toString().isEmpty())) {
+                } else if (!human.pillObject.time.contains(timingEditText.getText().toString())) {
 
                     human.pillObject.time.add(timingEditText.getText().toString());
 //                    Toast.makeText(MainActivity.this, "Time Added", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(MainActivity.this, human.pillObject.getName() + " " + String.valueOf(human.pillObject.getPillDosage()) + " " + human.pillObject.time.get(human.pillObject.time.size() - 1), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, human.getHumanName()+ " " + String.valueOf(human.pillObject.getName()) + " " + human.pillObject.time.get(human.pillObject.time.size() - 1), Toast.LENGTH_SHORT).show();
 
                 } else
                     Toast.makeText(MainActivity.this, "Time already exists !", Toast.LENGTH_SHORT).show();
