@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- this is the Spinner which shows the dropdown -->
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name1"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -117,10 +115,10 @@ android:text=""
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.516" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/clear"
@@ -194,7 +192,7 @@ android:text=""
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="0.443" />
 
     <Button
         android:id="@+id/pillAdd"
