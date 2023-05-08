@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
         BasicAWSCredentials credentials = new BasicAWSCredentials("AKIAWZE4LHRMMINZAQYH", "/J0o48inVABsBgAvHSS6jQ0rfslq72hpZYTd7sAi");
         s3Client = new AmazonS3Client(credentials);
         s3Client.setRegion(Region.getRegion(Regions.AP_SOUTHEAST_1));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.parseColor("#E91E63"));
+        }
 
         dosageEdittext.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
