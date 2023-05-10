@@ -7,3 +7,6 @@ Everything related to Smart Pill Dispenser.
 + boto3 library ( for raspberryPI )
 + rasp.py ( raspberry pi code to fetch pill configuration details )
 + ECS Files
+
+
+Technologies used: Android Studio, AWS, Firebase, Raspberry Pi
