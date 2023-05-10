@@ -11,7 +11,7 @@ Everything related to Smart Pill Dispenser.
 
 
 Technologies used: Android Studio, AWS, Firebase, Raspberry Pi
-
+----------------------------------------------------------------
 #Login Page
 
 ![Screenshot 2023-05-07 100459](https://github.com/diabloexodia/Smart_Pill_Dispenser_EnginneringClinics-WIN-2022-2023-/assets/85845393/2912ddcb-c23d-4998-8688-c91cf8cab38b)
