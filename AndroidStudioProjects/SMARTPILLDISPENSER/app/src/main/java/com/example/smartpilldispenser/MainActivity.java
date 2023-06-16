@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         pillListadder = findViewById(R.id.pillAdd2);
         naemEditText = findViewById(R.id.name);
 
-        BasicAWSCredentials credentials = new BasicAWSCredentials("AKIAWZE4LHRMMINZAQYH", "/J0o48inVABsBgAvHSS6jQ0rfslq72hpZYTd7sAi");
+        BasicAWSCredentials credentials = new BasicAWSCredentials("Access_Key", "Secret_Access_Key");
         s3Client = new AmazonS3Client(credentials);
         s3Client.setRegion(Region.getRegion(Regions.AP_SOUTHEAST_1));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -201,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             String FinalpillConfig = naemEditText.getText().toString() + "," + timingEditText.getText().toString() + "," + selecteddosageValue + "," + pillIdedittext.getText().toString();
-            AmazonS3 s3 = new AmazonS3Client(new BasicAWSCredentials("AKIAWZE4LHRMDMAQAMUT", "rjMk9by0v2ZIvY2SIQgKDhF/A8eaaSnzEA9LB0SF"));
+            AmazonS3 s3 = new AmazonS3Client(new BasicAWSCredentials("Access_Key", "Secret_Access_Key"));
             String bucketName = "smartpills";
             String key = "userdetails/userdetails.txt";
             String fileContents = formattedString; // Replace with your own file contents
